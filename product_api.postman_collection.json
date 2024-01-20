@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "b56dc274-6a7f-44ff-9f09-f4121f7b3b4f",
+		"name": "product_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18218528"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZXhhbXBsZXNtcy50ZXN0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MTMyMTczLCJleHAiOjE3MDUxMzU3NzMsIm5iZiI6MTcwNTEzMjE3MywianRpIjoianRiSkdXM2hjWXNSMmJQWiIsInN1YiI6IjUwMDYxMjQ3MzIiLCJwcnYiOiIxZDBhMDIwYWNmNWM0YjZjNDk3OTg5ZGYxYWJmMGZiZDRlOGM4ZDYzIn0.DgkGL_MAMT4bL7m1GgnhPIfFp5Mx2fjR3U80r70gCLs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://product_api.test/api/auth/me",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZXhhbXBsZXNtcy50ZXN0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MTMyMTczLCJleHAiOjE3MDUxMzU3NzMsIm5iZiI6MTcwNTEzMjE3MywianRpIjoianRiSkdXM2hjWXNSMmJQWiIsInN1YiI6IjUwMDYxMjQ3MzIiLCJwcnYiOiIxZDBhMDIwYWNmNWM0YjZjNDk3OTg5ZGYxYWJmMGZiZDRlOGM4ZDYzIn0.DgkGL_MAMT4bL7m1GgnhPIfFp5Mx2fjR3U80r70gCLs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://product_api.test/api/auth/refresh",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZXhhbXBsZXNtcy50ZXN0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MTMyMTczLCJleHAiOjE3MDUxMzU3NzMsIm5iZiI6MTcwNTEzMjE3MywianRpIjoianRiSkdXM2hjWXNSMmJQWiIsInN1YiI6IjUwMDYxMjQ3MzIiLCJwcnYiOiIxZDBhMDIwYWNmNWM0YjZjNDk3OTg5ZGYxYWJmMGZiZDRlOGM4ZDYzIn0.DgkGL_MAMT4bL7m1GgnhPIfFp5Mx2fjR3U80r70gCLs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://product_api.test/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ovonrueden@example.org",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://product_api.test/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://product_api.test/api/products",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://product_api.test/api/products/3",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "smt new",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "available",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "product",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://product_api.test/api/products",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://product_api.test/api/products/3?name=dsfasd&price=53&status=sold_out&type=product",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"products",
+								"3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "dsfasd"
+								},
+								{
+									"key": "price",
+									"value": "53"
+								},
+								{
+									"key": "status",
+									"value": "sold_out"
+								},
+								{
+									"key": "type",
+									"value": "product"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "brand new",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1003",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "available",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "product",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://product_api.test/api/products/7",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"products",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product_logs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://product_api.test/api/product_logs/3",
+							"protocol": "http",
+							"host": [
+								"product_api",
+								"test"
+							],
+							"path": [
+								"api",
+								"product_logs",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
